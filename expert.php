@@ -11,7 +11,7 @@ declare(strict_types=1);
 // Below we're defining a function, but it doesn't work when we run it.
 // Look at the error you get, read it and it should tell you the issue...,
 // sometimes, even your IDE can tell you what's wrong
-echo "Exercise 1 starts here:";
+
 new_exercise(1);
 function new_exercise($x) {
     $block = "<br/><hr/><br/><br/>Exercise $x starts here:<br/>";
@@ -111,7 +111,7 @@ copyright(date('Y'));
 
 new_exercise(8);
 function login(string $email, string $password) {
-    if($email == 'john@example.be' && $password == 'pocahontas') {
+    if($email === 'john@example.be' && $password === 'pocahontas') {
         echo 'Welcome John';
         return ' Smith <br>';
     }
@@ -155,7 +155,8 @@ new_exercise(10);
 $areTheseFruits = ['apple', 'bear', 'beef', 'banana', 'cherry', 'tomato', 'car'];
 $validFruits = ['apple', 'pear', 'banana', 'cherry', 'tomato'];
 //from here on you can change the code
-for($i=0; $i <= count($areTheseFruits)+1; $i++) {
+$count = count($areTheseFruits)-1;
+for($i=0; $i <= $count; $i++) {
     if(!in_array($areTheseFruits[$i], $validFruits)) {
         unset($areTheseFruits[$i]);
     }
