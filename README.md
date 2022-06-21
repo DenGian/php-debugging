@@ -38,7 +38,7 @@ You will change this junior code in expert code!
     - added '' wrapping first string to take "" in the string
   - Also changed the string length to make sure it was the right size and fitted " " in there after changes
 - ex 4
-  - added & in foreach loop parameter -> 
+  - added & in foreach loop parameter -> pasing by reference
     - link: https://www.php.net/manual/en/control-structures.foreach.php
 - ex 5
   - changed comparison Operator from <= to !=
